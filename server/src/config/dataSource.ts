@@ -7,11 +7,11 @@ import { SeederOptions } from 'typeorm-extension';
 
 const options: DataSourceOptions & SeederOptions = {
   type: 'mysql',
-  host: '77.243.81.95',
+  host: 'localhost',
   port: 3306,
-  username: 'admin',
-  password: 'TUot/Y+C//xu3cMJeOzm/0M=',
-  database: 'lesson_86',
+  username: 'testuser2',
+  password: 'secret',
+  database: 'exampledb',
   synchronize: false,
   logging: true,
   entities: ['src/entities/*{.ts,.js}'],
@@ -20,3 +20,4 @@ const options: DataSourceOptions & SeederOptions = {
 };
 
 export const appDataSource = new DataSource(options);
+$A$005$.tk!{/D%s/4?VjfaY1sockA8233UIIyBNNdAGXLqgYDwxpjV/t1mzvHj4
