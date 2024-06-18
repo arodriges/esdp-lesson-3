@@ -26,10 +26,12 @@ class App {
       this.app.use(route.path, route.router);
     });
   }
+
   private initAssets() {
     this.app.use(express.json());
     this.app.use(express.static('public'));
   }
+  
   public listen() {
     // connect();
     appDataSource.initialize();
