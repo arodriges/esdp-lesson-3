@@ -20,7 +20,9 @@ export function LoginForm({ form, closeModal }: Props) {
 
   useEffect(() => {
     if (!loading && submitted && !loginError) {
-      userContext.setToken('abc');
+      if (userContext.setToken) {
+        userContext.setToken('abc');
+      }
       form.resetFields();
       closeModal();
     }

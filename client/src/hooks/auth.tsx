@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 interface Props {
   children: React.ReactNode;
@@ -7,7 +6,7 @@ interface Props {
 
 interface IUserContext {
   token?: string;
-  setToken: (token: string) => void;
+  setToken?: (token: string) => void;
   loading?: boolean;
 }
 

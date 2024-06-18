@@ -1,6 +1,6 @@
 import { AuthModal } from '@/containers/AuthModal';
 import { UserContext } from '@/hooks/auth';
-import { Menu, MenuProps, Skeleton } from 'antd';
+import { Menu, MenuProps } from 'antd';
 import { Header } from 'antd/es/layout/layout';
 import { useContext } from 'react';
 import { Logout } from '../Logout';

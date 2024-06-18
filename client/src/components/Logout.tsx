@@ -12,7 +12,9 @@ export function Logout() {
   const onClick = () => {
     dispatch(logoutUser());
     localStorage.removeItem('token');
-    user.setToken('');
+    if (user?.setToken) {
+      user?.setToken('');
+    }
     navigate('/');
   };
 
