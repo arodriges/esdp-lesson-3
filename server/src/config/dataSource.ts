@@ -20,4 +20,3 @@ const options: DataSourceOptions & SeederOptions = {
 };
 
 export const appDataSource = new DataSource(options);
-$A$005$.tk!{/D%s/4?VjfaY1sockA8233UIIyBNNdAGXLqgYDwxpjV/t1mzvHj4
